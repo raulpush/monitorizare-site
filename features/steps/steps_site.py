@@ -1,8 +1,8 @@
 from lettuce import *
 from selenium import webdriver
 
-@after.each_feature
-def teardown_some_feature(feature):
+@after.each_scenario
+def teardown_some_feature(scenario):
     world.browser.quit()
 
 @step('we visit "(.*)"')
