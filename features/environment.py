@@ -16,9 +16,9 @@ before_tag(context, tag), after_tag(context, tag)
 
 """
 
-# -- SETUP: Use cfparse as default matcher
-# from behave import use_step_matcher
-# step_matcher("cfparse")
+#-- SETUP: Use cfparse as default matcher
+#from behave import use_step_matcher
+#step_matcher("cfparse")
 
 def before_all(context):
     context.config.setup_logging()
