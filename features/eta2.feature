@@ -1,5 +1,3 @@
-#h:\sourse\python\behave.example-master\features>behave site.feature
-@tags @tag
 Feature: testing www.magazin.eta2u.ro.net
 
   Scenario: visit eta2 b2b  and check title

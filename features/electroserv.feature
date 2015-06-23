@@ -1,8 +1,4 @@
-#h:\sourse\python\behave.example-master\features>behave site.feature
-@tags @tag
 Feature: testing www.electroserv.net
-
-
 
   Scenario: visit electroserv and check the link and icons of http://www.fonduri-ue.ro/
     When we visit "http://electroserv-ariesul.com/"
