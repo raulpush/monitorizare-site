@@ -10,8 +10,6 @@ import sys
 # ----------------------------------------------------------------------------
 # PROJECT-SPECIFIC SETUP PATHS:
 # ----------------------------------------------------------------------------
-import project_sitecustomize
-from behave_ext.formatter import pretty2
 
 # ----------------------------------------------------------------------------
 # BEHAVE-PATCHES:
@@ -20,8 +18,8 @@ def monkeypatch_behave():
     """
     Apply patches to "behave" to make documenation runs work.
     """
-    from behave_ext.terminal.ansiterm import AnsiStyle
-    from behave_ext.terminal import ansi_escapes as ansi_escapes2
+    from behave.terminal.ansiterm import AnsiStyle
+    from behave.terminal import ansi_escapes as ansi_escapes2
     from behave.formatter import ansi_escapes
     ansi_escapes.colors["grey"] = ansi_escapes.colors["white"]
     ansi_escapes.use_ansi_escape_colorbold_composites()
