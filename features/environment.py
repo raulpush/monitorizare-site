@@ -20,8 +20,8 @@ before_tag(context, tag), after_tag(context, tag)
 #from behave import use_step_matcher
 #step_matcher("cfparse")
 
-def before_all(context):
-    context.config.setup_logging()
-
-def after_scenario(context, scenario):
-    context.browser.quit()
+# def before_all(context):
+#     context.config.setup_logging()
+#
+# def after_scenario(context, scenario):
+#     context.browser.quit()
